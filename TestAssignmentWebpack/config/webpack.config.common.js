@@ -23,19 +23,23 @@ module.exports = {
                 test: /\.html$/,
                 loader: 'html-loader'
             },
-            // {
-            //     test: /\.js(x?)$/,
-            //     use: 'babel-loader',
-            // },
             {
-                test: /\.(scss|sass)$/,
-                use: [
-                    { loader: 'style-loader', options: { sourceMap: isDev } },
-                    { loader: 'css-loader', options: { sourceMap: isDev } },
-                    { loader: 'sass-loader', options: { sourceMap: isDev } }
-                ],
-                include: helpers.root('src', 'assets')
-            },
+                test: /\.css$/,
+                loaders: 'style-loader!css-loader'
+              },
+            //   {
+            //     test: /\.ts$/,
+            //     // exclude: /node_modules/,
+            //     use: ["awesome-typescript-loader"],
+            //     // include: helpers.root('src', 'seller')
+            //   },
+            // {
+            //     test: /\.ts$/,
+            //     loader: 'ts-loader',
+            //     // exclude: [ /node_modules/ ]
+            //     // include: helpers.root('src', 'app/seller')
+            //   },
+           
             {
                 test: /\.(scss|sass)$/,
                 use: [

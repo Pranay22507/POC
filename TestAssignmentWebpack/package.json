@@ -69,6 +69,8 @@
     "sass-loader": "~7.1",
     "style-loader": "~0.23",
     "to-string-loader": "^1.1.6",
+    "ts": "^0.2.2",
+    "ts-loader": "^7.0.5",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2",
