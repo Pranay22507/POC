@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CustomDirectiveApp';
+  defaultcolor:string="blue";
+  name:string="pranay";
+  componentData:string="Hello!!!";
+
+  catchdata(ev:string){
+  this.componentData=ev;
+  }
 }
